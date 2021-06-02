@@ -7,7 +7,7 @@ package codewars
  * best practice: str.split(' ').sortBy(_.sorted).mkString(" ")
  */
 object Text {
-  def order(str: String): String = str.split(" ").sortBy(index(_)).mkString(" ")
+  def order(str: String): String = str.split(" ").sortBy(index).mkString(" ")
 
   def index(str: String): Int = raw"(\d)".r.findFirstIn(str).get.toInt
 }

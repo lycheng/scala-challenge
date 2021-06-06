@@ -16,7 +16,6 @@ class PlayPassTest extends FlatSpec {
 }
 
 object PlayPassTest {
-
   private def dotest(s: String, n: Int, expect: String): Unit = {
     println("Testing:\n" + s + ", " + n)
     val actual: String = PlayPass.playPass(s, n)
